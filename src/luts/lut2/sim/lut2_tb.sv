@@ -1,4 +1,4 @@
-`include "../../rtl/lut2.sv"
+`include "../rtl/lut2.sv"
 
 module lut2_tb ();
 
