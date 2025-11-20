@@ -1,9 +1,9 @@
-`include "../rtl/mux4.sv"
+`include "../rtl/mux2.sv"
 
-module mux4_tb ();
+module mux2_tb ();
+    
 
-
-    mux4 DUT (
+    mux2 DUT (
 
     );
 

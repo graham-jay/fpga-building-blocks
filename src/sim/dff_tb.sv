@@ -1,9 +1,8 @@
-`include "../rtl/mux2.sv"
+`include "../rtl/dff.sv"
 
-module mux2_tb ();
+module dff_tb ();
 
-
-    mux2 DUT (
+    dff DUT (
 
     );
 

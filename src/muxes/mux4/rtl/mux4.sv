@@ -1,5 +1,0 @@
-module mux4 (
-
-);
-
-endmodule
