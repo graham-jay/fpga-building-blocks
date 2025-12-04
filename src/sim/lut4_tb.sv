@@ -1,18 +1,21 @@
-`include "../rtl/lut2.sv"
+`include "../rtl/lut4.sv"
 
-module lut2_tb ();
+module lut4_tb ();
 
-    reg in1, in2;
-    reg [3:0] sram;
+    reg in1, in2, in3, in4;
+    reg [15:0] sram;
     wire out;
 
-    lut2 DUT (
+    lut4 DUT (
         .in1(in1),
         .in2(in2),
+        .in3(in3),
+        .in4(in4),
         .sram(sram),
         .out(out)
     );
 
+    // Code below is currently set up for a LUT2, needs to be modified for LUT4
     initial begin
         $display("Test 1 - AND Gate");
         sram = 4'b1000;
