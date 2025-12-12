@@ -1,5 +1,7 @@
 module mux2 (
-    input  in1, in2, sel,
+    input  in1,
+    input  in2, 
+    input  sel,
     output out
 );
     assign out = sel ? in2 : in1;

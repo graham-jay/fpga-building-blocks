@@ -2,8 +2,12 @@
 
 module dff_tb ();
 
-    dff DUT (
+    reg clk, D, Q;
 
+    dff DUT (
+        .clk(clk),
+        .D(D),
+        .Q(Q)
     );
 
     initial begin
