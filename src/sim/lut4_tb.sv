@@ -2,15 +2,12 @@
 
 module lut4_tb ();
 
-    reg in1, in2, in3, in4;
+    reg [3:0]  in;
     reg [15:0] sram;
     wire out;
 
     lut4 DUT (
-        .in1(in1),
-        .in2(in2),
-        .in3(in3),
-        .in4(in4),
+        .in(in),
         .sram(sram),
         .out(out)
     );
